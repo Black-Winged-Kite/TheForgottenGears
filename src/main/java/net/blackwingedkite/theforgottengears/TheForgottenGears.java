@@ -1,6 +1,7 @@
 package net.blackwingedkite.theforgottengears;
 
 import com.mojang.logging.LogUtils;
+import net.blackwingedkite.theforgottengears.block.ModBlocks;
 import net.blackwingedkite.theforgottengears.item.ModItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -22,6 +23,8 @@ public class TheForgottenGears
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

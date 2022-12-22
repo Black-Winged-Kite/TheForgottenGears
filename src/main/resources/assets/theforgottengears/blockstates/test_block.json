@@ -1,0 +1,5 @@
+{
+  "variants" : {
+    "" : {"model" : "theforgottengears:block/test_block/block"}
+  }
+}
