@@ -1,7 +1,9 @@
 {
   "item.theforgottengears.bluepowder" : "Bluepowder",
   "item.theforgottengears.fine_bluepowder" : "Fine Bluepowder",
+  "item.theforgottengears.haunted_bluepowder" : "Haunted Bluepowder",
   "block.theforgottengears.test_block" : "Test Block",
+  "block.theforgottengears.warning_block" : "Warning Block",
   "block.theforgottengears.bluepowder_block" : "Bluepowder Block",
   "itemGroup.the_forgotten_gears_tab" : "The Forgotten Gears"
 }

@@ -1,6 +1,7 @@
 package net.blackwingedkite.theforgottengears.item;
 
 import net.blackwingedkite.theforgottengears.TheForgottenGears;
+import net.blackwingedkite.theforgottengears.item.custom.HauntedBluepowderItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,6 +20,10 @@ public class ModItems {
     //声明一个物品：优质兰粉
     public static final RegistryObject<Item> FINE_BLUEPOWDER = ITEMS.register("fine_bluepowder",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.THE_FROGOTTEN_GEARS_TAB)));
+
+    //声明一个物品：缠魂兰粉
+    public static final RegistryObject<Item> HAUNTED_BLUEPOWDER = ITEMS.register("haunted_bluepowder",
+            () -> new HauntedBluepowderItem(new Item.Properties().tab(ModCreativeModeTab.THE_FROGOTTEN_GEARS_TAB)));
 
     //注册模组物品
     public static void register(IEventBus eventBus){

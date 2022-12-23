@@ -1,7 +1,9 @@
 {
   "item.theforgottengears.bluepowder" : "兰粉",
   "item.theforgottengears.fine_bluepowder" : "优质兰粉",
+  "item.theforgottengears.haunted_bluepowder" : "缠魂兰粉",
   "block.theforgottengears.test_block" : "测试方块",
+  "block.theforgottengears.warning_block" : "危险方块",
   "block.theforgottengears.bluepowder_block" : "兰粉块",
   "itemGroup.the_forgotten_gears_tab" : "被遗忘的齿轮"
 }
