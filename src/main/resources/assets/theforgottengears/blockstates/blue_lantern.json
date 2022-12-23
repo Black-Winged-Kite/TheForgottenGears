@@ -1,0 +1,6 @@
+{
+  "variants" : {
+    "lit=true" : {"model" : "theforgottengears:block/blue_lantern/block_on"},
+    "lit=false" : {"model" : "theforgottengears:block/blue_lantern/block_off"}
+  }
+}

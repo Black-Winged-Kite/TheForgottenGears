@@ -1,6 +1,7 @@
 package net.blackwingedkite.theforgottengears.block;
 
 import net.blackwingedkite.theforgottengears.TheForgottenGears;
+import net.blackwingedkite.theforgottengears.block.custom.BlueLanternBlock;
 import net.blackwingedkite.theforgottengears.block.custom.WarningBlock;
 import net.blackwingedkite.theforgottengears.item.ModCreativeModeTab;
 import net.blackwingedkite.theforgottengears.item.ModItems;
@@ -42,6 +43,14 @@ public class ModBlocks {
     public static final RegistryObject<Block> WARNING_BLOCK = registerBlock("warning_block",//名称
             () -> new WarningBlock(BlockBehaviour.Properties.of(Material.STONE)//材质
                     .strength(6f)//挖掘时间
+                    .requiresCorrectToolForDrops()),//需要特定工具挖掘
+            ModCreativeModeTab.THE_FROGOTTEN_GEARS_TAB);//创造模式物品栏
+
+    //声明蓝灯方块
+    public static final RegistryObject<Block> BlUE_LANTERN = registerBlock("blue_lantern",//名称
+            () -> new BlueLanternBlock(BlockBehaviour.Properties.of(Material.STONE)//材质
+                    .strength(6f)//挖掘时间
+                    .lightLevel(state -> state.getValue(BlueLanternBlock.LIT) ? 15 : 0)//点亮
                     .requiresCorrectToolForDrops()),//需要特定工具挖掘
             ModCreativeModeTab.THE_FROGOTTEN_GEARS_TAB);//创造模式物品栏
 
